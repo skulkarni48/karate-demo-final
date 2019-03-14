@@ -107,7 +107,7 @@ There are 4 folders
     Also for suace demo website you can provide username and password redentials here. Similarly for browser tests, you can control resolution by editing desktop view and tablet view. 
     
     
-## You can run api, ui and integration as regular script using intellij and eclipse ide. For browser test assumes location of chrome on mac : /Applications/Google Chrome.app/Contents/MacOS/Google Chrome , or on windows: C:/Program Files (x86)/Google/Chrome/Application/chrome.exe. If you dont have please have it. For more details you can refere here: https://github.com/intuit/karate/tree/master/karate-core
+## You can run api, ui and integration as regular cucumber script using intellij or eclipse ide. For browser test, configurations assumes location of chrome on mac : /Applications/Google Chrome.app/Contents/MacOS/Google Chrome , or on windows: C:/Program Files (x86)/Google/Chrome/Application/chrome.exe. If you dont have please add it. For more details you can refere here: https://github.com/intuit/karate/tree/master/karate-core.
 
 
 ## Run Mock server and scripts
