@@ -137,3 +137,5 @@ java -jar karate.jar -m my-mock.feature -p 8080
 ### Report
 
 After script execution reports are created in HTML format file. You can get logs and readable results under "ourproject/target/surefire-reports/" folder with script name. 
+
+<a href="mock_test.gig">Example of Report for Mock Script<a>
