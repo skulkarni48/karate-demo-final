@@ -153,7 +153,7 @@ java -jar karate.jar -m my-mock.feature -p 8080
 
 It shows tests passing, failing, percentage of pass or fail, how much time each step took
 
-After script execution reports are created in HTML format file. You can get logs and readable results under "ourproject/target/surefire-reports/" folder with script name. 
+After script execution reports are created in HTML format file. You can get logs and readable results under <a href="https://github.com/skulkarni48/karate-demo-final/tree/master/ourproject/target/surefire-reports"> Test Logs and reports folder with script name. </a> 
 
 <a href="mock_test.gif">Example of Test Report generated for Mock Script<a>
 
