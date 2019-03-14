@@ -20,22 +20,27 @@
 
 Reference : <a href="https://github.com/intuit/karate">Karate-framework</a> 
 
-### Example test covers 
+### I have tried covering following areas using Karate Framework while solving assignment 
 
     1. Verify HTTP response codes 
-    2. Verifying performance of API
-    3. Verify schema of API response
-    4. Verify value in json response 
-    5. Generate report after test execution
-    6. Dynamically constructed next requests from response data (yes our tests should be independent but at at same time need to balance how many API requests you want to send, because as your suite expand and team grows it might slow down/overload whole testing system or suite might take longer time to finish, so this features helps solving that issue)  
-    7. Failing one scenario does not stop the execution of a script
-    8. Building mock server and writing tests using that mock server.
-    9. Setup common environment variable
-    10. Use common helper methods, across scripts
-    11. Take screenshot for UI tests
-    12. add tag to ignore script
-    13. Add easy configuration to adjust driver for UI test
-    14. Add easy configuartion to adjust resolution for mobile/tablet/desktop view
+    2. Post/Get/Delete most commonly used methods examples
+    3. Verifying performance of API (response timing for each service/end point)
+    4. Verify schema of API response
+    5. Verify key-values in json response 
+    6. Generate readable automation script report after execution
+    7. Dynamically constructed next requests from response data (yes our tests should be independent but at at same time need to balance how many API requests you want to send, because as your suite expand and team grows it might slow down/overload whole testing system or suite might take longer time to finish, so this features helps solving that issue)  
+    8. Failing one scenario does not stop the execution of a script
+    9. Build mock server and unit tests using mock server instead of actual service.
+    10. Setup common environment variables for dev/staging/prod
+    11. Use common helper methods, across scripts
+    12. Take screenshot for UI tests
+    13. add tag to ignore script
+    14. Add easy configuration to adjust driver for UI test
+    15. Add easy configuartion to adjust resolution for mobile/tablet/desktop view
+    16. Run multile,cases for same scenario
+    17. Pass results of previous API response to next like get session id, and use it in all subsecuent requests for integration test with third party. 
+    18. Gave examples of unit, integration api, mock tests, browser tests
+    
     
     
  # Getting Started
