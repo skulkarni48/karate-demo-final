@@ -20,7 +20,7 @@
 
 Reference : <a href="https://github.com/intuit/karate">Karate-framework</a> 
 
-### I have tried covering following areas using Karate Framework while solving assignment 
+### Using Scripts/Code/Configurations in this repository, tried to cover following areas using Karate Framework while solving assignment 
 
     1. Verify HTTP response codes 
     2. Post/Get/Delete most commonly used methods examples
