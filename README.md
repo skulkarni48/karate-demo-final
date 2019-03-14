@@ -110,9 +110,11 @@ B) add_product_to_cart.feature from UI folder, covers second assignment problem.
     
  You can run api, ui and integration as regular cucumber script using intellij or eclipse ide.
  
- For browser test, configurations assumes location of chrome on mac : /Applications/Google Chrome.app/Contents/MacOS/Google Chrome , 
+ For browser test, configurations assumes location of chrome 
  
- or on windows: C:/Program Files (x86)/Google/Chrome/Application/chrome.exe. If you dont have please add it. 
+ on mac : /Applications/Google Chrome.app/Contents/MacOS/Google Chrome 
+ 
+ on windows: C:/Program Files (x86)/Google/Chrome/Application/chrome.exe. If you dont have please add it. 
  
  For more details you can refere here: https://github.com/intuit/karate/tree/master/karate-core.
 
