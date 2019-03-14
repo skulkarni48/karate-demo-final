@@ -1,0 +1,46 @@
+01:32:59.907 karate.env system property was: null 
+01:32:59.918 request:
+1 > GET https://api.themoviedb.org/3/tv/top_rated?api_key=f75f0fa597aaa1cb2675dfc37bdc298a&language=en-US&page=100
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.themoviedb.org
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+01:33:00.315 response time in milliseconds: 395.80
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After
+1 < Connection: keep-alive
+1 < Content-Length: 62
+1 < Content-Type: application/json;charset=utf-8
+1 < Date: Wed, 13 Mar 2019 08:33:02 GMT
+1 < ETag: 44f683a84163b3523afe57c2e008bc8c
+1 < Server: openresty
+1 < X-RateLimit-Limit: 40
+1 < X-RateLimit-Remaining: 38
+1 < X-RateLimit-Reset: 1552465991
+{"page":100,"total_results":696,"total_pages":35,"results":[]}
+
+01:33:00.367 [print] myresults2: []
+01:33:00.370 request:
+2 > GET https://api.themoviedb.org/3/tv/top_rated?api_key=f75f0fa597aaa1cb2675dfc37bdc298a&language=en-US&page=100
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: api.themoviedb.org
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+01:33:00.734 response time in milliseconds: 362.34
+2 < 200
+2 < Access-Control-Allow-Origin: *
+2 < Access-Control-Expose-Headers: ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After
+2 < Connection: keep-alive
+2 < Content-Length: 62
+2 < Content-Type: application/json;charset=utf-8
+2 < Date: Wed, 13 Mar 2019 08:33:02 GMT
+2 < ETag: 44f683a84163b3523afe57c2e008bc8c
+2 < Server: openresty
+2 < X-RateLimit-Limit: 40
+2 < X-RateLimit-Remaining: 37
+2 < X-RateLimit-Reset: 1552465991
+{"page":100,"total_results":696,"total_pages":35,"results":[]}
+

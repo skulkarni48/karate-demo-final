@@ -1,0 +1,27 @@
+01:33:00.766 karate.env system property was: null 
+01:33:00.780 request:
+1 > GET https://api.themoviedb.org/3/tv/my_top_rated?api_key=f75f0fa597aaa1cb2675dfc37bdc298a&language=en-US&page=1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.themoviedb.org
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+01:33:01.160 response time in milliseconds: 378.44
+1 < 404
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After
+1 < Cache-Control: public, max-age=3600
+1 < Connection: keep-alive
+1 < Content-Length: 84
+1 < Content-Type: application/json;charset=utf-8
+1 < Date: Wed, 13 Mar 2019 08:33:02 GMT
+1 < Server: openresty
+1 < X-Memc: MISS
+1 < X-Memc-Age: 0
+1 < X-Memc-Expires: 3600
+1 < X-Memc-Key: 00735a0d2bd3a139f3808ab9599a5e90
+1 < X-RateLimit-Limit: 40
+1 < X-RateLimit-Remaining: 36
+1 < X-RateLimit-Reset: 1552465991
+{"status_code":34,"status_message":"The resource you requested could not be found."}
+

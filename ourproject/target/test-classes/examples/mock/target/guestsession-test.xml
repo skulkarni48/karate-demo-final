@@ -1,0 +1,33 @@
+<testsuite failures="0" name="guestsession-test.feature" skipped="0" tests="1" time="1.630889">
+  <testcase classname="guestsession-test" name="create guest_session_id" time="1.630889">
+    <system-out>* def port = 8080 ......................................................... passed
+* url 'http://localhost:' + port + '/guestsession' ........................ passed
+Given request { api_key : '1234'} ......................................... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match response contains { "success":true, guest_session_id: '#uuid', expires_at: '#notnull' } . passed
+And def guest_session_id1 = response.guest_session_id ..................... passed
+Given path guest_session_id1 .............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response contains { "success":true, guest_session_id: '#uuid', expires_at: '#notnull' } . passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response contains [{ "success":true, guest_session_id: '#(guest_session_id1)', expires_at: '#notnull' }] . passed
+Given request { api_key: '12345' } ........................................ passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+And match response contains { "success":true, guest_session_id: '#uuid', expires_at: '#notnull' } . passed
+And def guest_session_id2 = response.guest_session_id ..................... passed
+Given path guest_session_id2 .............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response contains { "success":true, guest_session_id: '#uuid', expires_at: '#notnull' } . passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response contains [{ "success":true, guest_session_id: '#(guest_session_id1)', expires_at: '#notnull' },{ "success":true, guest_session_id: '#(guest_session_id2)', expires_at: '#notnull' }] . passed
+Given request { guest_session_id: '#(guest_session_id2)' } ................ passed
+When method delete ........................................................ passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,272 @@
+23:32:17.863 [main] INFO  com.intuit.karate.netty.Main - Karate version: 0.9.1
+23:32:19.659 [main] INFO  com.intuit.karate - backend initialized
+23:32:20.119 [main] INFO  c.intuit.karate.netty.FeatureServer - server started - http://127.0.0.1:8080
+23:32:54.122 [main] INFO  com.intuit.karate.netty.Main - Karate version: 0.9.1
+23:32:54.365 [main] INFO  com.intuit.karate.Runner - Karate version: 0.9.1
+23:32:55.359 [ForkJoinPool-1-worker-1] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+23:32:56.373 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/guestsession
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 18
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+{"api_key":"1234"}
+
+23:32:56.544 [nioEventLoopGroup-3-1] DEBUG com.intuit.karate - handling method: POST, uri: /guestsession
+23:32:56.600 [nioEventLoopGroup-3-1] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession/{api_key}') && pathParams.api_key == '7659e43c-2e09-475a-9d62-5916c91db7ce'
+23:32:56.612 [nioEventLoopGroup-3-1] DEBUG com.intuit.karate - scenario matched: pathMatches('/guestsession') && methodIs('post')
+23:32:56.668 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 290.32
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json
+{"success":true,"expires_at":"2019-03-14T06:32:19.639","guest_session_id":"f60a9637-ed06-4ef8-a22c-fe6ebe927251"}
+
+23:32:56.693 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+2 > GET http://localhost:8080/guestsession/f60a9637-ed06-4ef8-a22c-fe6ebe927251
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+23:32:56.699 [nioEventLoopGroup-3-2] DEBUG com.intuit.karate - handling method: GET, uri: /guestsession/f60a9637-ed06-4ef8-a22c-fe6ebe927251
+23:32:56.713 [nioEventLoopGroup-3-2] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession/{api_key}') && pathParams.api_key == '7659e43c-2e09-475a-9d62-5916c91db7ce'
+23:32:56.714 [nioEventLoopGroup-3-2] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession') && methodIs('post')
+23:32:56.727 [nioEventLoopGroup-3-2] DEBUG com.intuit.karate - scenario matched: pathMatches('/guestsession/{guest_session_id}')
+23:32:56.746 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 51.05
+2 < 200
+2 < Access-Control-Allow-Origin: *
+2 < Content-Type: application/json
+{"success":true,"expires_at":"2019-03-14T06:32:19.639","guest_session_id":"f60a9637-ed06-4ef8-a22c-fe6ebe927251"}
+
+23:32:56.751 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+3 > GET http://localhost:8080/guestsession
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Host: localhost:8080
+3 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+23:32:56.758 [nioEventLoopGroup-3-3] DEBUG com.intuit.karate - handling method: GET, uri: /guestsession
+23:32:56.773 [nioEventLoopGroup-3-3] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession/{api_key}') && pathParams.api_key == '7659e43c-2e09-475a-9d62-5916c91db7ce'
+23:32:56.775 [nioEventLoopGroup-3-3] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession') && methodIs('post')
+23:32:56.776 [nioEventLoopGroup-3-3] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession/{guest_session_id}')
+23:32:56.782 [nioEventLoopGroup-3-3] DEBUG com.intuit.karate - scenario matched: pathMatches('/guestsession')
+23:32:56.786 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 33.54
+3 < 200
+3 < Access-Control-Allow-Origin: *
+3 < Content-Type: application/json
+[{"success":true,"expires_at":"2019-03-14T06:32:19.639","guest_session_id":"f60a9637-ed06-4ef8-a22c-fe6ebe927251"}]
+
+23:32:56.798 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+4 > POST http://localhost:8080/guestsession
+4 > Accept-Encoding: gzip,deflate
+4 > Connection: Keep-Alive
+4 > Content-Length: 19
+4 > Content-Type: application/json; charset=UTF-8
+4 > Host: localhost:8080
+4 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+{"api_key":"12345"}
+
+23:32:56.803 [nioEventLoopGroup-3-4] DEBUG com.intuit.karate - handling method: POST, uri: /guestsession
+23:32:56.810 [nioEventLoopGroup-3-4] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession/{api_key}') && pathParams.api_key == '7659e43c-2e09-475a-9d62-5916c91db7ce'
+23:32:56.811 [nioEventLoopGroup-3-4] DEBUG com.intuit.karate - scenario matched: pathMatches('/guestsession') && methodIs('post')
+23:32:56.818 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 18.65
+4 < 200
+4 < Access-Control-Allow-Origin: *
+4 < Content-Type: application/json
+{"success":true,"expires_at":"2019-03-14T06:32:19.639","guest_session_id":"6d59784f-23cb-4f32-986f-ec6d592644c8"}
+
+23:32:56.824 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+5 > GET http://localhost:8080/guestsession/6d59784f-23cb-4f32-986f-ec6d592644c8
+5 > Accept-Encoding: gzip,deflate
+5 > Connection: Keep-Alive
+5 > Host: localhost:8080
+5 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+23:32:56.830 [nioEventLoopGroup-3-5] DEBUG com.intuit.karate - handling method: GET, uri: /guestsession/6d59784f-23cb-4f32-986f-ec6d592644c8
+23:32:56.840 [nioEventLoopGroup-3-5] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession/{api_key}') && pathParams.api_key == '7659e43c-2e09-475a-9d62-5916c91db7ce'
+23:32:56.841 [nioEventLoopGroup-3-5] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession') && methodIs('post')
+23:32:56.842 [nioEventLoopGroup-3-5] DEBUG com.intuit.karate - scenario matched: pathMatches('/guestsession/{guest_session_id}')
+23:32:56.845 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 18.97
+5 < 200
+5 < Access-Control-Allow-Origin: *
+5 < Content-Type: application/json
+{"success":true,"expires_at":"2019-03-14T06:32:19.639","guest_session_id":"6d59784f-23cb-4f32-986f-ec6d592644c8"}
+
+23:32:56.848 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+6 > GET http://localhost:8080/guestsession
+6 > Accept-Encoding: gzip,deflate
+6 > Connection: Keep-Alive
+6 > Host: localhost:8080
+6 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+23:32:56.853 [nioEventLoopGroup-3-6] DEBUG com.intuit.karate - handling method: GET, uri: /guestsession
+23:32:56.861 [nioEventLoopGroup-3-6] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession/{api_key}') && pathParams.api_key == '7659e43c-2e09-475a-9d62-5916c91db7ce'
+23:32:56.862 [nioEventLoopGroup-3-6] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession') && methodIs('post')
+23:32:56.863 [nioEventLoopGroup-3-6] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession/{guest_session_id}')
+23:32:56.865 [nioEventLoopGroup-3-6] DEBUG com.intuit.karate - scenario matched: pathMatches('/guestsession')
+23:32:56.869 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 19.88
+6 < 200
+6 < Access-Control-Allow-Origin: *
+6 < Content-Type: application/json
+[{"success":true,"expires_at":"2019-03-14T06:32:19.639","guest_session_id":"f60a9637-ed06-4ef8-a22c-fe6ebe927251"},{"success":true,"expires_at":"2019-03-14T06:32:19.639","guest_session_id":"6d59784f-23cb-4f32-986f-ec6d592644c8"}]
+
+23:32:56.881 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+7 > DELETE http://localhost:8080/guestsession
+7 > Accept-Encoding: gzip,deflate
+7 > Connection: Keep-Alive
+7 > Content-Length: 59
+7 > Content-Type: application/json; charset=UTF-8
+7 > Host: localhost:8080
+7 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+{"guest_session_id":"6d59784f-23cb-4f32-986f-ec6d592644c8"}
+
+23:32:56.886 [nioEventLoopGroup-3-7] DEBUG com.intuit.karate - handling method: DELETE, uri: /guestsession
+23:32:56.895 [nioEventLoopGroup-3-7] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession/{api_key}') && pathParams.api_key == '7659e43c-2e09-475a-9d62-5916c91db7ce'
+23:32:56.897 [nioEventLoopGroup-3-7] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession') && methodIs('post')
+23:32:56.898 [nioEventLoopGroup-3-7] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession/{guest_session_id}')
+23:32:56.900 [nioEventLoopGroup-3-7] DEBUG com.intuit.karate - scenario matched: pathMatches('/guestsession')
+23:32:56.903 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 20.63
+7 < 200
+7 < Access-Control-Allow-Origin: *
+7 < Content-Type: application/json
+[{"success":true,"expires_at":"2019-03-14T06:32:19.639","guest_session_id":"f60a9637-ed06-4ef8-a22c-fe6ebe927251"},{"success":true,"expires_at":"2019-03-14T06:32:19.639","guest_session_id":"6d59784f-23cb-4f32-986f-ec6d592644c8"}]
+
+23:32:56.992 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: guestsession-test.feature
+01:35:13.428 [main] INFO  com.intuit.karate.netty.Main - Karate version: 0.9.1
+01:35:15.301 [main] INFO  com.intuit.karate - backend initialized
+01:35:15.891 [main] INFO  c.intuit.karate.netty.FeatureServer - server started - http://127.0.0.1:8080
+01:35:49.830 [main] INFO  com.intuit.karate.netty.Main - Karate version: 0.9.1
+01:35:50.068 [main] INFO  com.intuit.karate.Runner - Karate version: 0.9.1
+01:35:51.168 [ForkJoinPool-1-worker-1] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+01:35:52.238 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/guestsession
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 18
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+{"api_key":"1234"}
+
+01:35:52.504 [nioEventLoopGroup-3-1] DEBUG com.intuit.karate - handling method: POST, uri: /guestsession
+01:35:52.568 [nioEventLoopGroup-3-1] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession/{api_key}') && pathParams.api_key == '7659e43c-2e09-475a-9d62-5916c91db7ce'
+01:35:52.581 [nioEventLoopGroup-3-1] DEBUG com.intuit.karate - scenario matched: pathMatches('/guestsession') && methodIs('post')
+01:35:52.636 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 394.67
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json
+{"success":true,"expires_at":"2019-03-14T08:35:15.283","guest_session_id":"e0a8f84c-0513-4c85-b1af-15e5befb3bc4"}
+
+01:35:52.662 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+2 > GET http://localhost:8080/guestsession/e0a8f84c-0513-4c85-b1af-15e5befb3bc4
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+01:35:52.668 [nioEventLoopGroup-3-2] DEBUG com.intuit.karate - handling method: GET, uri: /guestsession/e0a8f84c-0513-4c85-b1af-15e5befb3bc4
+01:35:52.681 [nioEventLoopGroup-3-2] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession/{api_key}') && pathParams.api_key == '7659e43c-2e09-475a-9d62-5916c91db7ce'
+01:35:52.682 [nioEventLoopGroup-3-2] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession') && methodIs('post')
+01:35:52.688 [nioEventLoopGroup-3-2] DEBUG com.intuit.karate - scenario matched: pathMatches('/guestsession/{guest_session_id}')
+01:35:52.704 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 41.14
+2 < 200
+2 < Access-Control-Allow-Origin: *
+2 < Content-Type: application/json
+{"success":true,"expires_at":"2019-03-14T08:35:15.283","guest_session_id":"e0a8f84c-0513-4c85-b1af-15e5befb3bc4"}
+
+01:35:52.710 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+3 > GET http://localhost:8080/guestsession
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Host: localhost:8080
+3 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+01:35:52.714 [nioEventLoopGroup-3-3] DEBUG com.intuit.karate - handling method: GET, uri: /guestsession
+01:35:52.721 [nioEventLoopGroup-3-3] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession/{api_key}') && pathParams.api_key == '7659e43c-2e09-475a-9d62-5916c91db7ce'
+01:35:52.722 [nioEventLoopGroup-3-3] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession') && methodIs('post')
+01:35:52.723 [nioEventLoopGroup-3-3] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession/{guest_session_id}')
+01:35:52.731 [nioEventLoopGroup-3-3] DEBUG com.intuit.karate - scenario matched: pathMatches('/guestsession')
+01:35:52.734 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 22.93
+3 < 200
+3 < Access-Control-Allow-Origin: *
+3 < Content-Type: application/json
+[{"success":true,"expires_at":"2019-03-14T08:35:15.283","guest_session_id":"e0a8f84c-0513-4c85-b1af-15e5befb3bc4"}]
+
+01:35:52.745 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+4 > POST http://localhost:8080/guestsession
+4 > Accept-Encoding: gzip,deflate
+4 > Connection: Keep-Alive
+4 > Content-Length: 19
+4 > Content-Type: application/json; charset=UTF-8
+4 > Host: localhost:8080
+4 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+{"api_key":"12345"}
+
+01:35:52.754 [nioEventLoopGroup-3-4] DEBUG com.intuit.karate - handling method: POST, uri: /guestsession
+01:35:52.764 [nioEventLoopGroup-3-4] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession/{api_key}') && pathParams.api_key == '7659e43c-2e09-475a-9d62-5916c91db7ce'
+01:35:52.765 [nioEventLoopGroup-3-4] DEBUG com.intuit.karate - scenario matched: pathMatches('/guestsession') && methodIs('post')
+01:35:52.771 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 25.11
+4 < 200
+4 < Access-Control-Allow-Origin: *
+4 < Content-Type: application/json
+{"success":true,"expires_at":"2019-03-14T08:35:15.283","guest_session_id":"ab556e63-6cab-4333-bb3b-d7eacf163f7c"}
+
+01:35:52.779 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+5 > GET http://localhost:8080/guestsession/ab556e63-6cab-4333-bb3b-d7eacf163f7c
+5 > Accept-Encoding: gzip,deflate
+5 > Connection: Keep-Alive
+5 > Host: localhost:8080
+5 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+01:35:52.784 [nioEventLoopGroup-3-5] DEBUG com.intuit.karate - handling method: GET, uri: /guestsession/ab556e63-6cab-4333-bb3b-d7eacf163f7c
+01:35:52.794 [nioEventLoopGroup-3-5] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession/{api_key}') && pathParams.api_key == '7659e43c-2e09-475a-9d62-5916c91db7ce'
+01:35:52.795 [nioEventLoopGroup-3-5] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession') && methodIs('post')
+01:35:52.796 [nioEventLoopGroup-3-5] DEBUG com.intuit.karate - scenario matched: pathMatches('/guestsession/{guest_session_id}')
+01:35:52.800 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 19.47
+5 < 200
+5 < Access-Control-Allow-Origin: *
+5 < Content-Type: application/json
+{"success":true,"expires_at":"2019-03-14T08:35:15.283","guest_session_id":"ab556e63-6cab-4333-bb3b-d7eacf163f7c"}
+
+01:35:52.803 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+6 > GET http://localhost:8080/guestsession
+6 > Accept-Encoding: gzip,deflate
+6 > Connection: Keep-Alive
+6 > Host: localhost:8080
+6 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+01:35:52.810 [nioEventLoopGroup-3-6] DEBUG com.intuit.karate - handling method: GET, uri: /guestsession
+01:35:52.816 [nioEventLoopGroup-3-6] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession/{api_key}') && pathParams.api_key == '7659e43c-2e09-475a-9d62-5916c91db7ce'
+01:35:52.817 [nioEventLoopGroup-3-6] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession') && methodIs('post')
+01:35:52.817 [nioEventLoopGroup-3-6] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession/{guest_session_id}')
+01:35:52.819 [nioEventLoopGroup-3-6] DEBUG com.intuit.karate - scenario matched: pathMatches('/guestsession')
+01:35:52.823 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 19.15
+6 < 200
+6 < Access-Control-Allow-Origin: *
+6 < Content-Type: application/json
+[{"success":true,"expires_at":"2019-03-14T08:35:15.283","guest_session_id":"e0a8f84c-0513-4c85-b1af-15e5befb3bc4"},{"success":true,"expires_at":"2019-03-14T08:35:15.283","guest_session_id":"ab556e63-6cab-4333-bb3b-d7eacf163f7c"}]
+
+01:35:52.835 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - request:
+7 > DELETE http://localhost:8080/guestsession
+7 > Accept-Encoding: gzip,deflate
+7 > Connection: Keep-Alive
+7 > Content-Length: 59
+7 > Content-Type: application/json; charset=UTF-8
+7 > Host: localhost:8080
+7 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+{"guest_session_id":"ab556e63-6cab-4333-bb3b-d7eacf163f7c"}
+
+01:35:52.843 [nioEventLoopGroup-3-7] DEBUG com.intuit.karate - handling method: DELETE, uri: /guestsession
+01:35:52.849 [nioEventLoopGroup-3-7] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession/{api_key}') && pathParams.api_key == '7659e43c-2e09-475a-9d62-5916c91db7ce'
+01:35:52.851 [nioEventLoopGroup-3-7] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession') && methodIs('post')
+01:35:52.852 [nioEventLoopGroup-3-7] DEBUG com.intuit.karate - scenario skipped: pathMatches('/guestsession/{guest_session_id}')
+01:35:52.853 [nioEventLoopGroup-3-7] DEBUG com.intuit.karate - scenario matched: pathMatches('/guestsession')
+01:35:52.856 [ForkJoinPool-1-worker-1] DEBUG com.intuit.karate - response time in milliseconds: 18.83
+7 < 200
+7 < Access-Control-Allow-Origin: *
+7 < Content-Type: application/json
+[{"success":true,"expires_at":"2019-03-14T08:35:15.283","guest_session_id":"e0a8f84c-0513-4c85-b1af-15e5befb3bc4"},{"success":true,"expires_at":"2019-03-14T08:35:15.283","guest_session_id":"ab556e63-6cab-4333-bb3b-d7eacf163f7c"}]
+
+01:35:52.987 [ForkJoinPool-1-worker-1] INFO  com.intuit.karate.Runner - <<pass>> feature 1 of 1: guestsession-test.feature

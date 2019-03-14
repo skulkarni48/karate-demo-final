@@ -1,0 +1,4 @@
+01:44:55.097 karate.env system property was: null 
+01:44:38.670 assertion failed: path: $.text('.header_label'), actual: '{"type":"object","subtype":"error","className":"TypeError","description":"TypeError: Cannot read property 'textContent' of null\n    at <anonymous>:1:40","objectId":"{\"injectedScriptId\":1,\"id\":15}"}', expected: 'Swag Labs', reason: not equal
+eason: not equal
+description":"TypeError: Cannot read property 'textContent' of null\n    at <anonymous>:1:50","objectId":"{\"injectedScriptId\":4,\"id\":7}"}', expected: 'Sauce Labs Onesie', reason: not equal

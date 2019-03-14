@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Guest Session</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div>
+      <a href="http://localhost:8080/guestsession">GET /guestsession</a>
+    </div>
+    <p/>    
+    <div>
+      <label for="api_key">API KEY: <input id="api_key" value=""/></label>
+      <button onclick="createCat()">Create Guest Session</button>
+    </div>    
+    <p/>
+    <div id="response"></div>
+    <script>
+      var createCat = function() {
+        var api_key = $('#api_key').val();
+        $.ajax({          
+          url: 'http://localhost:8080/guestsession',
+          data: JSON.stringify({ api_key: api_key }),
+          method: 'POST',
+          success: function(result) {
+            $('#response').html('Guest Session: ' + JSON.stringify(result));
+          }
+        });
+      };
+    </script>    
+  </body>
+</html>

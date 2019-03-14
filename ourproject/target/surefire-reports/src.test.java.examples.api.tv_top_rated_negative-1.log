@@ -1,0 +1,23 @@
+01:32:57.736 karate.env system property was: null 
+01:32:59.165 request:
+1 > GET https://api.themoviedb.org/3/tv/top_rated?api_key=1234&language=en-US&page=1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.themoviedb.org
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+01:32:59.780 response time in milliseconds: 612.96
+1 < 401
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After
+1 < Connection: keep-alive
+1 < Content-Length: 102
+1 < Content-Type: application/json;charset=utf-8
+1 < Date: Wed, 13 Mar 2019 08:33:01 GMT
+1 < ETag: ec8956637a99787bd197eacd77acce5e
+1 < Server: openresty
+1 < X-RateLimit-Limit: 40
+1 < X-RateLimit-Remaining: 39
+1 < X-RateLimit-Reset: 1552465991
+{"status_code":7,"status_message":"Invalid API key: You must be granted a valid key.","success":false}
+
