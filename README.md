@@ -134,7 +134,9 @@ To start a mock server, the 2 mandatory arguments are the path of the feature fi
 java -jar karate.jar -m my-mock.feature -p 8080
 ```
 
-### Test Report (It shows tests passing, failing, percentage of pass or fail, how much time each step took)
+## Test Report 
+
+It shows tests passing, failing, percentage of pass or fail, how much time each step took
 
 After script execution reports are created in HTML format file. You can get logs and readable results under "ourproject/target/surefire-reports/" folder with script name. 
 
