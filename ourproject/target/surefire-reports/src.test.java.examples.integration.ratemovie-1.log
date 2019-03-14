@@ -1,0 +1,171 @@
+01:33:36.481 karate.env system property was: null 
+01:33:37.713 request:
+1 > GET https://api.themoviedb.org/3/authentication/guest_session/new?api_key=f75f0fa597aaa1cb2675dfc37bdc298a
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.themoviedb.org
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+01:33:38.367 response time in milliseconds: 650.87
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After
+1 < Cache-Control: public, max-age=0
+1 < Connection: keep-alive
+1 < Content-Length: 109
+1 < Content-Type: application/json;charset=utf-8
+1 < Date: Wed, 13 Mar 2019 08:33:40 GMT
+1 < ETag: "b545ebff2055492cd98af645a0d3e7cc"
+1 < Server: openresty
+1 < X-RateLimit-Limit: 40
+1 < X-RateLimit-Remaining: 39
+1 < X-RateLimit-Reset: 1552466030
+{"success":true,"guest_session_id":"009c4592f1a13387e75ef9a83dfcb215","expires_at":"2019-03-14 08:33:40 UTC"}
+
+01:33:38.399 [print] guest session id : 009c4592f1a13387e75ef9a83dfcb215
+01:33:38.415 request:
+2 > GET https://api.themoviedb.org/3/guest_session/009c4592f1a13387e75ef9a83dfcb215/rated/movies?api_key=f75f0fa597aaa1cb2675dfc37bdc298a&language=en-US&sort_by=created_at.desc
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: api.themoviedb.org
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+01:33:38.813 response time in milliseconds: 397.17
+2 < 200
+2 < Access-Control-Allow-Origin: *
+2 < Access-Control-Expose-Headers: ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After
+2 < Cache-Control: public, max-age=0
+2 < Connection: keep-alive
+2 < Content-Length: 57
+2 < Content-Type: application/json;charset=utf-8
+2 < Date: Wed, 13 Mar 2019 08:33:40 GMT
+2 < ETag: "a8d277d2d95f2ea20f792a48c43093dc"
+2 < Server: openresty
+2 < X-RateLimit-Limit: 40
+2 < X-RateLimit-Remaining: 38
+2 < X-RateLimit-Reset: 1552466030
+{"page":1,"results":[],"total_pages":0,"total_results":0}
+
+01:33:38.841 request:
+3 > POST https://api.themoviedb.org/3/movie/11/rating?api_key=f75f0fa597aaa1cb2675dfc37bdc298a&guest_session_id=009c4592f1a13387e75ef9a83dfcb215
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Content-Length: 13
+3 > Content-Type: application/json; charset=UTF-8
+3 > Host: api.themoviedb.org
+3 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+{"value":8.5}
+
+01:33:39.272 response time in milliseconds: 430.12
+3 < 201
+3 < Access-Control-Allow-Origin: *
+3 < Access-Control-Expose-Headers: ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After
+3 < Cache-Control: public, max-age=0
+3 < Connection: keep-alive
+3 < Content-Length: 45
+3 < Content-Type: application/json;charset=utf-8
+3 < Date: Wed, 13 Mar 2019 08:33:41 GMT
+3 < Server: openresty
+3 < X-RateLimit-Limit: 40
+3 < X-RateLimit-Remaining: 37
+3 < X-RateLimit-Reset: 1552466030
+{"status_code":1,"status_message":"Success."}
+
+01:33:39.284 request:
+4 > GET https://api.themoviedb.org/3/guest_session/009c4592f1a13387e75ef9a83dfcb215/rated/movies?api_key=f75f0fa597aaa1cb2675dfc37bdc298a&language=en-US&sort_by=created_at.desc
+4 > Accept-Encoding: gzip,deflate
+4 > Connection: Keep-Alive
+4 > Host: api.themoviedb.org
+4 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+01:33:39.649 response time in milliseconds: 364.49
+4 < 200
+4 < Access-Control-Allow-Origin: *
+4 < Access-Control-Expose-Headers: ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After
+4 < Cache-Control: public, max-age=0
+4 < Connection: keep-alive
+4 < Content-Length: 57
+4 < Content-Type: application/json;charset=utf-8
+4 < Date: Wed, 13 Mar 2019 08:33:41 GMT
+4 < ETag: "a8d277d2d95f2ea20f792a48c43093dc"
+4 < Server: openresty
+4 < X-RateLimit-Limit: 40
+4 < X-RateLimit-Remaining: 36
+4 < X-RateLimit-Reset: 1552466030
+{"page":1,"results":[],"total_pages":0,"total_results":0}
+
+01:33:39.674 retry condition evaluation failed: javascript evaluation failed: responseStatus == 200 && response.results[0].id == 11, Index: 0, Size: 0
+01:33:39.675 retry condition not satisfied: responseStatus == 200 && response.results[0].id == 11
+01:33:39.675 sleeping before retry #1
+01:33:44.680 request:
+5 > GET https://api.themoviedb.org/3/guest_session/009c4592f1a13387e75ef9a83dfcb215/rated/movies?api_key=f75f0fa597aaa1cb2675dfc37bdc298a&language=en-US&sort_by=created_at.desc
+5 > Accept-Encoding: gzip,deflate
+5 > Connection: Keep-Alive
+5 > Host: api.themoviedb.org
+5 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+01:33:45.140 response time in milliseconds: 459.44
+5 < 200
+5 < Access-Control-Allow-Origin: *
+5 < Access-Control-Expose-Headers: ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After
+5 < Cache-Control: public, max-age=0
+5 < Connection: keep-alive
+5 < Content-Length: 717
+5 < Content-Type: application/json;charset=utf-8
+5 < Date: Wed, 13 Mar 2019 08:33:46 GMT
+5 < ETag: "63348c3038d39e432aa12e5238265125"
+5 < Server: openresty
+5 < X-RateLimit-Limit: 40
+5 < X-RateLimit-Remaining: 35
+5 < X-RateLimit-Reset: 1552466030
+{"page":1,"results":[{"adult":false,"backdrop_path":"/4iJfYYoQzZcONB9hNzg0J0wWyPH.jpg","genre_ids":[12,28,878],"id":11,"original_language":"en","original_title":"Star Wars","overview":"Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.","poster_path":"/btTdmkgIvOi0FFip1sPuZI2oQG6.jpg","release_date":"1977-05-25","title":"Star Wars","video":false,"vote_average":8.2,"vote_count":10953,"popularity":42.577,"rating":8.5}],"total_pages":1,"total_results":1}
+
+01:33:45.142 retry condition satisfied
+01:33:45.150 request:
+6 > DELETE https://api.themoviedb.org/3/movie/11/rating?api_key=f75f0fa597aaa1cb2675dfc37bdc298a&guest_session_id=009c4592f1a13387e75ef9a83dfcb215
+6 > Accept-Encoding: gzip,deflate
+6 > Connection: Keep-Alive
+6 > Host: api.themoviedb.org
+6 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+01:33:45.541 response time in milliseconds: 391.12
+6 < 200
+6 < Access-Control-Allow-Origin: *
+6 < Access-Control-Expose-Headers: ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After
+6 < Cache-Control: public, max-age=0
+6 < Connection: keep-alive
+6 < Content-Length: 79
+6 < Content-Type: application/json;charset=utf-8
+6 < Date: Wed, 13 Mar 2019 08:33:47 GMT
+6 < Server: openresty
+6 < X-RateLimit-Limit: 40
+6 < X-RateLimit-Remaining: 34
+6 < X-RateLimit-Reset: 1552466030
+{"status_code":13,"status_message":"The item/record was deleted successfully."}
+
+01:33:45.546 request:
+7 > GET https://api.themoviedb.org/3/guest_session/009c4592f1a13387e75ef9a83dfcb215/rated/movies?api_key=f75f0fa597aaa1cb2675dfc37bdc298a&language=en-US&sort_by=created_at.desc
+7 > Accept-Encoding: gzip,deflate
+7 > Connection: Keep-Alive
+7 > Host: api.themoviedb.org
+7 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+01:33:45.951 response time in milliseconds: 403.85
+7 < 200
+7 < Access-Control-Allow-Origin: *
+7 < Access-Control-Expose-Headers: ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After
+7 < Cache-Control: public, max-age=0
+7 < Connection: keep-alive
+7 < Content-Length: 57
+7 < Content-Type: application/json;charset=utf-8
+7 < Date: Wed, 13 Mar 2019 08:33:47 GMT
+7 < ETag: "a8d277d2d95f2ea20f792a48c43093dc"
+7 < Server: openresty
+7 < X-RateLimit-Limit: 40
+7 < X-RateLimit-Remaining: 33
+7 < X-RateLimit-Reset: 1552466030
+{"page":1,"results":[],"total_pages":0,"total_results":0}
+
+YYoQzZcONB9hNzg0J0wWyPH.jpg","genre_ids":[12,28,878],"id":11,"original_language":"en","original_title":"Star Wars","overview":"Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.","poster_path":"/btTdmkgIvOi0FFip1sPuZI2oQG6.jpg","release_date":"1977-05-25","title":"Star Wars","video":false,"vote_average":8.2,"vote_count":10953,"popularity":42.577,"rating":8.5}],"total_pages":1,"total_results":1}
+
+01:33:23.764 assertion failed: path: $.results, actual: [{"adult":false,"backdrop_path":"\/4iJfYYoQzZcONB9hNzg0J0wWyPH.jpg","genre_ids":[12,28,878],"id":11,"original_language":"en","original_title":"Star Wars","overview":"Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.","poster_path":"\/btTdmkgIvOi0FFip1sPuZI2oQG6.jpg","release_date":"1977-05-25","title":"Star Wars","video":false,"vote_average":8.2,"vote_count":10953,"popularity":42.577,"rating":8.5}], expected: [], reason: actual and expected arrays are not the same size - 1:0

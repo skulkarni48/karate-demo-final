@@ -1,0 +1,101 @@
+01:35:51.169 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+01:35:52.239 request:
+1 > POST http://localhost:8080/guestsession
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 18
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+{"api_key":"1234"}
+
+01:35:52.636 response time in milliseconds: 394.67
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json
+{"success":true,"expires_at":"2019-03-14T08:35:15.283","guest_session_id":"e0a8f84c-0513-4c85-b1af-15e5befb3bc4"}
+
+01:35:52.662 request:
+2 > GET http://localhost:8080/guestsession/e0a8f84c-0513-4c85-b1af-15e5befb3bc4
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+01:35:52.705 response time in milliseconds: 41.14
+2 < 200
+2 < Access-Control-Allow-Origin: *
+2 < Content-Type: application/json
+{"success":true,"expires_at":"2019-03-14T08:35:15.283","guest_session_id":"e0a8f84c-0513-4c85-b1af-15e5befb3bc4"}
+
+01:35:52.710 request:
+3 > GET http://localhost:8080/guestsession
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Host: localhost:8080
+3 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+01:35:52.734 response time in milliseconds: 22.93
+3 < 200
+3 < Access-Control-Allow-Origin: *
+3 < Content-Type: application/json
+[{"success":true,"expires_at":"2019-03-14T08:35:15.283","guest_session_id":"e0a8f84c-0513-4c85-b1af-15e5befb3bc4"}]
+
+01:35:52.746 request:
+4 > POST http://localhost:8080/guestsession
+4 > Accept-Encoding: gzip,deflate
+4 > Connection: Keep-Alive
+4 > Content-Length: 19
+4 > Content-Type: application/json; charset=UTF-8
+4 > Host: localhost:8080
+4 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+{"api_key":"12345"}
+
+01:35:52.772 response time in milliseconds: 25.11
+4 < 200
+4 < Access-Control-Allow-Origin: *
+4 < Content-Type: application/json
+{"success":true,"expires_at":"2019-03-14T08:35:15.283","guest_session_id":"ab556e63-6cab-4333-bb3b-d7eacf163f7c"}
+
+01:35:52.780 request:
+5 > GET http://localhost:8080/guestsession/ab556e63-6cab-4333-bb3b-d7eacf163f7c
+5 > Accept-Encoding: gzip,deflate
+5 > Connection: Keep-Alive
+5 > Host: localhost:8080
+5 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+01:35:52.800 response time in milliseconds: 19.47
+5 < 200
+5 < Access-Control-Allow-Origin: *
+5 < Content-Type: application/json
+{"success":true,"expires_at":"2019-03-14T08:35:15.283","guest_session_id":"ab556e63-6cab-4333-bb3b-d7eacf163f7c"}
+
+01:35:52.803 request:
+6 > GET http://localhost:8080/guestsession
+6 > Accept-Encoding: gzip,deflate
+6 > Connection: Keep-Alive
+6 > Host: localhost:8080
+6 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+01:35:52.824 response time in milliseconds: 19.15
+6 < 200
+6 < Access-Control-Allow-Origin: *
+6 < Content-Type: application/json
+[{"success":true,"expires_at":"2019-03-14T08:35:15.283","guest_session_id":"e0a8f84c-0513-4c85-b1af-15e5befb3bc4"},{"success":true,"expires_at":"2019-03-14T08:35:15.283","guest_session_id":"ab556e63-6cab-4333-bb3b-d7eacf163f7c"}]
+
+01:35:52.836 request:
+7 > DELETE http://localhost:8080/guestsession
+7 > Accept-Encoding: gzip,deflate
+7 > Connection: Keep-Alive
+7 > Content-Length: 59
+7 > Content-Type: application/json; charset=UTF-8
+7 > Host: localhost:8080
+7 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+{"guest_session_id":"ab556e63-6cab-4333-bb3b-d7eacf163f7c"}
+
+01:35:52.856 response time in milliseconds: 18.83
+7 < 200
+7 < Access-Control-Allow-Origin: *
+7 < Content-Type: application/json
+[{"success":true,"expires_at":"2019-03-14T08:35:15.283","guest_session_id":"e0a8f84c-0513-4c85-b1af-15e5befb3bc4"},{"success":true,"expires_at":"2019-03-14T08:35:15.283","guest_session_id":"ab556e63-6cab-4333-bb3b-d7eacf163f7c"}]
+
