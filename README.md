@@ -81,7 +81,7 @@ You can use Eclipse or IntelliJ to run script, need to add cucumber plugin to ru
 
 # Folder structure 
 
-All tests are kept under "ourproject/src/test/java/examples/" folder
+All tests are kept under <a href="https://github.com/skulkarni48/karate-demo-final/tree/master/ourproject/src/test/java/examples">Examples folder</a>
 There are 4 folders
 
     1. api         : Which covers api test for tv top rated api with positive and netagive test cases, here we are actually hitting their server
